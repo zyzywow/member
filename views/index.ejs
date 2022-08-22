@@ -1,0 +1,18 @@
+<%- include("include/header"); %>
+<main id="main">
+  <div id="contents">
+    <h2 class="title"><%= title %></h2>
+    <div class="btns">
+      <% if(userInfo) { %>
+      <a href="/mypage">마이페이지</a>
+      <a href="/logout">로그아웃</a>
+    </div>
+    <% } else { %>
+    <div class="btns">
+      <a href="/join">회원가입</a>
+      <a href="/login">로그인</a>
+    </div>
+    <%}%>
+  </div>
+</main>
+<%- include("include/footer"); %>
